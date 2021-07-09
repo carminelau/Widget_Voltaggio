@@ -2,6 +2,7 @@
 
     /* NON MODIFICARE -> INIZIO */ 
     import { createEventDispatcher } from 'svelte';
+    import Voltaggio from './Voltaggio.svelte';
     export let visible = false;
 	const dispatch = createEventDispatcher();
     const showResult = () => dispatch("showResult"); 
@@ -23,25 +24,8 @@
 
 <main style={visible ? "" : "display: none"}>
 
+    <Voltaggio />
 
-    <!-- ESEMPIO FUNZIONAMENTO ->  INIZIO -->
-    <Button class="primary-color" on:click={() => showError("Esempio di errore")}>
-        Mostra errore
-    </Button>
-
-    <Button class="primary-color" on:click={() => showMaintenance("Esempio di manutenzione")}>
-        Mostra manutenzione
-    </Button>
-
-    <Button class="primary-color" on:click={() => showLoading("Esempio di caricamento")}>
-        Mostra caricamento generale
-    </Button>
-
-    <Button class="primary-color" on:click={() => showProgressBar("Esempio di caricamento con barra", 75)}>
-        Mostra caricamento con barra
-    </Button>
-    <!-- ESEMPIO FUNZIONAMENTO ->  FINE -->
-    
 </main>
 
 <style>
