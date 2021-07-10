@@ -1,4 +1,4 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+<script>
 
     /* NON MODIFICARE -> INIZIO */ 
     import { createEventDispatcher } from 'svelte';
@@ -253,11 +253,11 @@
                 </form>
             </fieldset>
         </div>
-        <!--<div id="graphContainer" class="chartContainerStyle">
+        <div id="graphContainer" class="chartContainerStyle">
             <canvas id="chartContainer" ></canvas>
-        </div> -->
+        </div>
 
-        <Line width={60} height={20}/>
+        <!-- <Line width={60} height={20}/> -->
     </div>
     
 </main>

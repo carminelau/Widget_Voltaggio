@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@mdi/js": "^5.9.55",
+    "chartjs": "^0.3.24",
     "sirv-cli": "^1.0.0",
     "svelte-chartjs": "^1.0.1",
     "svelte-materialify": "^0.3.11"
